@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table demo</title>
+
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            padding:5px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table >
+        <caption>Studends data</caption>
+        <tr>
+            <th>first name</th>
+            <th>last name</th>
+            <th>marks</th>
+        </tr>
+        <tr>
+            <td>u m </td>
+            <td>likhith</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>k</td>
+            <td>Varsha</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>var </td>
+            <td>likhi</td>
+            <td>100</td>
+        </tr>
+    </table>  <br> 
+    <!--table with colspan-->
+    <h2>colspan Example</h2>    
+    <table>  
+      <tr>  
+      <th>Name</th>  
+      <th colspan="2">Mobile No.</th>  
+      </tr>  
+      <tr>  
+      <td>Ajeet Maurya</td>  
+      <td>7503520801</td>  
+      <td>9555879135</td>  
+      </tr>  
+    </table>
+
+    <!--table with rowspan-->
+    <h2>rowspan Example</h2>    
+    <table>    
+    <tr><th>Name</th><td>Ajeet Maurya</td></tr>    
+    <tr><th rowspan="2">Mobile No.</th><td>7503520801</td></tr>    
+    <tr><td>9555879135</td></tr>    
+    </table>   
+
+<!--thead tbody tfooter-->
+<table border="1">
+    <caption>Sales Report</caption>
+  
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <tr>
+        <td>Notebook</td>
+        <td>$2.00</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Pen</td>
+        <td>$1.00</td>
+        <td>7</td>
+      </tr>
+    </tbody>
+  
+    <tfoot>
+      <tr>
+        <td colspan="2">Total Quantity</td>
+        <td>12</td>
+      </tr>
+    </tfoot>
+  </table>
+  
+
+</body>
+</html>

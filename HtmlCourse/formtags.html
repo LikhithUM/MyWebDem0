@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tags Demo</title>
+</head>
+<body>
+    
+    <h1>HTML Form Tags Demonstration</h1>
+
+    <form action="/submit" method="post">
+
+        <!-- Fieldset with Legend -->
+        <fieldset>
+            <legend>User Information</legend>
+
+            <!-- Label and Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <!-- Textarea -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+            <!-- Select and Option -->
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="hr">HR</option>
+                <option value="engineering">Engineering</option>
+                <option value="marketing">Marketing</option>
+            </select><br><br>
+
+            <!-- Datalist -->
+            <label for="color">Favorite Color:</label>
+            <input list="colors" id="color" name="color">
+            <datalist id="colors">
+                <option value="Red">
+                <option value="Green">
+                <option value="Blue">
+            </datalist><br><br>
+
+            <!-- Output (typically for JavaScript, static here) -->
+            <label for="result">Output (static):</label>
+            <output id="result">42</output><br><br>
+
+            <!-- Button -->
+            <button type="submit">Submit</button>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
