@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description List with Microdata</title>
+</head>
+<body>
+
+    <!-- Main heading -->
+    <h3>Description List Example</h3>
+
+    <!-- Basic description list -->
+    <p>The following list shows full forms of some common abbreviations:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language - the standard language for creating web pages.</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets - used for styling the appearance of web content.</dd>
+
+        <dt>JS</dt>
+        <dd>JavaScript - a scripting language used to make web pages interactive.</dd>
+
+        <dt>SQL</dt>
+        <dd>Structured Query Language - used for managing and manipulating databases.</dd>
+    </dl>
+
+    <!-- ======================= -->
+    <!-- Microdata-enhanced list -->
+    <!-- ======================= -->
+
+    <h3>Description List with Microdata (Schema.org)</h3>
+
+    <!-- 
+        role="definition": Identifies the section as containing definitions.
+        itemscope: Declares that the element contains microdata.
+        itemtype: URL of the vocabulary that describes the data (e.g., https://schema.org/DefinedTerm)
+        itemprop: Property name that describes the role of the element in the item.
+    -->
+    <dl role="definition">
+        <!-- Each term definition set is treated as a separate item -->
+        <div itemscope itemtype="https://schema.org/DefinedTerm">
+            <dt itemprop="name">API</dt>
+            <dd itemprop="description">Application Programming Interface - allows different software applications to communicate with each other.</dd>
+        </div>
+
+        <div itemscope itemtype="https://schema.org/DefinedTerm">
+            <dt itemprop="name">HTTP</dt>
+            <dd itemprop="description">HyperText Transfer Protocol - the foundation of data communication on the web.</dd>
+        </div>
+
+        <div itemscope itemtype="https://schema.org/DefinedTerm">
+            <dt itemprop="name">URL</dt>
+            <dd itemprop="description">Uniform Resource Locator - the address of a web page or resource on the internet.</dd>
+        </div>
+    </dl>
+
+</body>
+</html>
